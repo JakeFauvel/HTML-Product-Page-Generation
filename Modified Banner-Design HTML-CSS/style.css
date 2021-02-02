@@ -1,0 +1,1332 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', 'Montserrat', sans-serif;
+}
+
+.Bricoflor-body {
+    margin: 0;
+    padding: 0;
+}
+
+.Bricoflor-header {
+    height: 70px;
+    padding: 15px 0;
+    background: linear-gradient(
+            4deg,
+            rgba(121, 21, 76, 1) 0%,
+            rgba(133, 24, 74, 1) 35%,
+            rgba(149, 32, 76, 1) 100%
+    );
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bricoflor-headerInnerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bricoflor-headerTextWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bricoflor-headerText {
+    margin-left: 5px;
+    font-weight: lighter;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 15px;
+    }
+
+    .Bricoflor-headerInnerContent {
+        width: 80%;
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+
+    .Bricoflor-headerTextWrapper {
+        margin-right: 40px;
+    }
+}
+
+.Bricoflor-InnerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* .................Bricoflor-Logo Section........................................*/
+
+.Bricoflor-logoSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: white;
+}
+
+.Bricoflor-leftLogoSection {
+    display: flex;
+}
+
+.Bricoflor-companyName {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-companyDescription {
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.Bricoflor-rightLogoSection {
+    display: flex;
+}
+
+.Bricoflor-LargeScreenLargeScreenShortContact {
+    display: none;
+}
+
+.Bricoflor-searchIcon {
+    font-size: 35px;
+    color: rgb(53, 47, 78);
+}
+
+@media screen and (min-width: 576px) {
+    .Bricoflor-companyName {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Bricoflor-companyName {
+        font-size: 42px;
+    }
+
+    .Bricoflor-companylogo {
+        font-size: 50px;
+        margin-right: 6px;
+    }
+
+    .Bricoflor-companyDescription {
+        font-size: 14px;
+    }
+
+    .Bricoflor-searchIcon {
+        font-size: 45px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-logoSection {
+        padding: 50px 50px;
+    }
+
+    .Bricoflor-LargeScreenLargeScreenShortContact {
+        display: block;
+        margin-right: 30px;
+    }
+
+    .Bricoflor-LargeScreenCallernumber {
+        display: flex;
+        align-items: center;
+        color: rgb(160, 37, 77);
+        text-decoration: none;
+    }
+
+    .Bricoflor-LargeScreenCallerFaceLogo {
+        font-size: 40px;
+        color: rgb(160, 37, 77);
+        margin-right: 25px;
+        align-items: center;
+        display: flex;
+        line-height: 1;
+    }
+
+    .Bricoflor-LargeScreenCaller {
+        font-size: 18px;
+        color: rgb(93, 97, 125);
+        margin-bottom: 15px;
+    }
+
+    .Bricoflor-LargeScreenCallerNumber {
+        line-height: 1;
+        font-size: 32px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgb(160, 37, 77);
+        text-decoration: none;
+    }
+
+    .Bricoflor-LargeScreenTiming {
+        font-size: 20px;
+        color: rgb(93, 97, 125);
+        line-height: 1;
+    }
+}
+
+/* .....................Bricoflor-shortContact...............*/
+.Bricoflor-shortContact {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 14px;
+}
+
+.Bricoflor-Callernumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bricoflor-callerFaceLogo {
+    margin-right: 6px;
+    color: rgb(160, 37, 77);
+    width: 20px;
+    display: flex;
+}
+
+.Bricoflor-caller {
+    font-size: 12px;
+    color: rgb(93, 97, 125);
+}
+
+.Bricoflor-callerNumber {
+    font-size: 12px;
+    margin-left: 4px;
+    font-weight: 600;
+    color: rgb(160, 37, 77);
+}
+
+.Bricoflor-timing {
+    font-size: 12px;
+    color: rgb(93, 97, 125);
+}
+
+@media screen and (min-width: 576px) {
+    .Bricoflor-callerFaceLogo {
+        font-size: 20px;
+    }
+
+    .Bricoflor-caller {
+        font-size: 16px;
+    }
+
+    .Bricoflor-callerNumber {
+        font-size: 16px;
+    }
+
+    .Bricoflor-timing {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Bricoflor-callerFaceLogo {
+        font-size: 25px;
+    }
+
+    .Bricoflor-caller {
+        font-size: 18px;
+    }
+
+    .Bricoflor-callerNumber {
+        font-size: 18px;
+    }
+
+    .Bricoflor-timing {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-shortContact {
+        display: none;
+    }
+}
+
+/* ...........................Bricoflor-Image................................ */
+
+.Bricoflor-ImgTagsDescripWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.Bricoflor-image {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.Bricoflor-mainImage {
+    width: 100%;
+    margin: 20px auto 20px auto;
+}
+
+@media screen and (min-width: 500px) {
+    .Bricoflor-mainImage {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-ImgTagsDescripWrapper {
+        flex-direction: row;
+        margin: 20px 80px 80px 80px;
+    }
+
+    .Bricoflor-mainImage {
+        max-width: 40%;
+        height: auto;
+        width: 40%;
+        margin: 0 20px 0 0;
+    }
+}
+
+/* ....................Tags Wrapper.Bricoflor.............. */
+.Bricoflor-tagsWrapper {
+    display: flex;
+    padding: 10px;
+}
+
+.Bricoflor-spritTag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 7, 36);
+    color: white;
+    width: 45%;
+    line-height: 9px;
+    padding: 18px 0;
+    border-radius: 5px;
+    box-shadow: 6px 6px 5px rgba(180, 179, 179, 0.15);
+}
+
+.Bricoflor-spritWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.Bricoflor-home {
+    font-size: 12px;
+    margin-left: -25px;
+}
+
+.Bricoflor-qualityTag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(244, 244, 249);
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 6px 6px 5px rgba(180, 179, 179, 0.15);
+    margin-left: auto;
+}
+
+.Bricoflor-qualityText {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.Bricoflor-horozontalBars {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 6px;
+}
+
+.Bricoflor-barOne {
+    width: 25%;
+    height: 3px;
+    background-color: black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Bricoflor-barTwo {
+    width: 25%;
+    height: 3px;
+    background-color: red;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Bricoflor-barThree {
+    width: 25%;
+    height: 3px;
+    background-color: yellow;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Bricoflor-manufacturer {
+    font-size: 8px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 576px) {
+    .Bricoflor-spritTag {
+        padding: 25px 0;
+    }
+
+    .Bricoflor-sprit {
+        font-size: 30px;
+    }
+
+    .Bricoflor-home {
+        font-size: 14px;
+        margin-left: -28px;
+        margin-top: 4px;
+    }
+
+    .Bricoflor-qualityText {
+        font-size: 14px;
+    }
+
+    .Bricoflor-manufacturer {
+        font-size: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Bricoflor-verticalBars {
+        font-size: 28px;
+    }
+
+    .Bricoflor-spritTag {
+        padding: 32px 0;
+    }
+
+    .Bricoflor-sprit {
+        font-size: 35px;
+    }
+
+    .Bricoflor-home {
+        font-size: 16px;
+        margin-left: -35px;
+        margin-top: 8px;
+    }
+
+    .Bricoflor-qualityTag {
+        padding: 10px 0;
+    }
+
+    .Bricoflor-qualityText {
+        font-size: 16px;
+    }
+
+    .Bricoflor-manufacturer {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-tagsWrapper {
+        padding: 0;
+    }
+
+    .Bricoflor-verticalBars {
+        font-size: 22px;
+    }
+
+    .Bricoflor-spritTag {
+        padding: 20px 20px;
+        width: 25%;
+    }
+
+    .Bricoflor-sprit {
+        font-size: 28px;
+    }
+
+    .Bricoflor-home {
+        margin-top: 2px;
+    }
+
+    .Bricoflor-qualityTag {
+        padding: 0 20px;
+        width: 25%;
+        margin-left: 30px;
+    }
+
+    .Bricoflor-manufacturer {
+        font-size: 10px;
+    }
+}
+
+/*...................................ProductDescriptionWrapper.....................*/
+.Bricoflor-ProductDescriptionWrapper {
+    margin-top: 5px;
+    padding: 0 20px;
+}
+
+.Bricoflor-shortTitle {
+    font-weight: 100;
+    margin: 4px 0;
+}
+
+.Bricoflor-longTitle {
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-DescriptionPoints {
+    margin: 0;
+    padding: 0;
+}
+
+.Bricoflor-leaf {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAMAAABl5a5YAAAAYFBMVEUAAAD///+WGkiXHkucKVOgMFmhM1ylO2GmPmSoQmeqRmqwVHW3Y4G4ZoS8bYq9cI2+cY2/dJDBeJPCe5bEf5jGgpvLjaTWpbfds8Piws7mytTp0drs2N/16u748fP69Pa56VoHAAAAAnRSTlMAAHaTzTgAAABhSURBVBjTldBHEoAgEERRZ8AcwIQYuf8tHUNZhJV/+XbdURQEAGtfcMR83AEuMBLf+HJDjV+JIZjRaiJobBAEmQ0lAfMB/0Hlw+CD9iAFF+LNASaetUp1UspW6YOOgPCeE3SnBC/S8Bm5AAAAAElFTkSuQmCC");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    left: 3px;
+    margin-right: 6px;
+}
+
+.Bricoflor-DescriptionOneWrapper {
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+    font-size: 14px;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-DescriptionTwoWrapper {
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-DescriptionThreeWrapper {
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+    font-size: 14px;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-DescriptionFourWrapper {
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+    font-size: 14px;
+    color: rgb(53, 47, 78);
+}
+
+@media screen and (min-width: 576px) {
+    .Bricoflor-shortTitle {
+        font-size: 18px;
+    }
+
+    .Bricoflor-longTitle {
+        font-size: 25px;
+        line-height: 2rem;
+    }
+
+    .Bricoflor-DescriptionOneWrapper {
+        font-size: 18px;
+    }
+
+    .Bricoflor-DescriptionTwoWrapper {
+        font-size: 18px;
+    }
+
+    .Bricoflor-DescriptionThreeWrapper {
+        font-size: 18px;
+    }
+
+    .Bricoflor-DescriptionFourWrapper {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Bricoflor-shortTitle {
+        font-size: 20px;
+    }
+
+    .Bricoflor-longTitle {
+        font-size: 30px;
+    }
+
+    .Bricoflor-leaf {
+    }
+
+    .Bricoflor-DescriptionOneWrapper {
+        font-size: 20px;
+    }
+
+    .Bricoflor-DescriptionTwoWrapper {
+        font-size: 20px;
+    }
+
+    .Bricoflor-DescriptionThreeWrapper {
+        font-size: 20px;
+    }
+
+    .Bricoflor-DescriptionFourWrapper {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-ProductDescriptionWrapper {
+        padding: 0 20px;
+    }
+
+    .Bricoflor-shortTitle {
+        font-size: 20px;
+    }
+
+    .Bricoflor-longTitle {
+        font-size: 24px;
+        line-height: 2rem;
+    }
+
+    .Bricoflor-leaf {
+    }
+
+    .Bricoflor-DescriptionOneWrapper {
+        margin: 3px 0;
+        font-size: 18px;
+    }
+
+    .Bricoflor-DescriptionTwoWrapper {
+        margin: 3px 0;
+        font-size: 18px;
+    }
+
+    .Bricoflor-DescriptionThreeWrapper {
+        margin: 3px 0;
+        font-size: 18px;
+    }
+
+    .Bricoflor-DescriptionFourWrapper {
+        margin: 3px 0;
+        font-size: 18px;
+    }
+}
+
+/* .........................priceDeliveryWrapper..........................................*/
+
+.Bricoflor-priceDeliveryWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.Bricoflor-priceWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+
+}
+
+.Bricoflor-priceTagIcon {
+    font-size: 30px;
+    margin-top: 12px;
+    margin-right: 21px;
+}
+
+.Bricoflor-priceDescription {
+    margin-left: 12px;
+}
+
+.Bricoflor-totalPrice {
+    color: rgb(161, 38, 77);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.Bricoflor-price {
+    font-size: 18px;
+    margin-right: 8px;
+    font-weight: 900;
+}
+
+.Bricoflor-individualPrice {
+    font-size: 14px;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-priceDeliveryLine {
+    border-bottom: 1px solid rgb(224, 224, 229);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Bricoflor-deliveryWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+
+}
+
+.Bricoflor-wagonIcon {
+    font-size: 30px;
+    margin-top: 12px;
+    margin-right: 21px;
+}
+
+.Bricoflor-deliveryDescription {
+    margin-left: 14px;
+    color: rgb(53, 47, 78);
+    font-size: 13px;
+}
+
+@media screen and (min-width: 576px) {
+    .Bricoflor-priceTagIcon {
+        font-size: 40px;
+    }
+
+    .Bricoflor-price {
+        font-size: 24px;
+    }
+
+    .Bricoflor-wagonIcon {
+        font-size: 40px;
+    }
+
+    .Bricoflor-deliveryDescription {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Bricoflor-priceDeliveryWrapper {
+        margin-top: 60px;
+    }
+
+    .Bricoflor-priceWrapper {
+        padding: 40px 15px;
+    }
+
+    .Bricoflor-priceTagIcon {
+        font-size: 45px;
+    }
+
+    .Bricoflor-totalPrice {
+        font-size: 18px;
+    }
+
+    .Bricoflor-price {
+        font-size: 26px;
+    }
+
+    .Bricoflor-individualPrice {
+        font-size: 18px;
+    }
+
+    .Bricoflor-deliveryWrapper {
+        padding: 40px 15px;
+    }
+
+    .Bricoflor-wagonIcon {
+        font-size: 45px;
+    }
+
+    .Bricoflor-deliveryDescription {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-priceDeliveryWrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .Bricoflor-priceDeliveryWrapper {
+        margin-top: 0;
+    }
+
+    .Bricoflor-priceWrapper {
+        padding: 40px 15px;
+        width: 37%;
+    }
+
+    .Bricoflor-priceTagIcon {
+        font-size: 45px;
+    }
+
+    .Bricoflor-totalPrice {
+        font-size: 18px;
+    }
+
+    .Bricoflor-price {
+        font-size: 26px;
+    }
+
+    .Bricoflor-individualPrice {
+        font-size: 18px;
+    }
+
+    .Bricoflor-priceDeliveryLine {
+        border-right: 1px solid rgb(224, 224, 229);
+        border-bottom: 0;
+        width: 1%;
+
+        margin: 50px auto;
+    }
+
+    .Bricoflor-deliveryWrapper {
+        padding: 40px 15px;
+        width: 37%;
+    }
+
+    .Bricoflor-wagonIcon {
+        font-size: 45px;
+    }
+
+    .Bricoflor-deliveryDescription {
+        font-size: 18px;
+    }
+}
+
+/* .............................detailsWrapper................................... */
+.Bricoflor-detailsWrapper {
+    margin: 20px 20px;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-detailsTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-detailsDescription {
+    margin-top: 12px;
+}
+
+@media screen and (min-width: 576px) {
+    .Bricoflor-detailsTitle {
+        font-size: 26px;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Bricoflor-detailsWrapper {
+        margin-top: 60px;
+    }
+
+    .Bricoflor-detailsTitle {
+        font-size: 30px;
+    }
+
+    .Bricoflor-detailsDescription {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-detailsWrapper {
+        margin: 80px;
+    }
+
+    .Bricoflor-detailsTitle {
+        font-size: 22px;
+    }
+
+    .Bricoflor-detailsDescription {
+        font-size: 20px;
+    }
+}
+
+/* ................technicalSpecs..................... */
+.Bricoflor-technicalSpecs {
+    margin: 40px 20px 20px 20px;
+    padding: 20px 15px;
+    background: #F4F4F9;
+    border-radius: 4px;
+    box-shadow: 6px 6px 5px rgba(180, 179, 179, 0.15);
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-technicalSpecs {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto 35px auto;
+    }
+}
+
+.Bricoflor-technicalSpecsInner {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-technicalSpecsInner {
+        margin: 80px;
+    }
+}
+
+.Bricoflor-SampleImg1 {
+    width: 50%;
+    margin: 20px auto;
+    height: 100%;
+}
+
+.Bricoflor-technicalSpecsShortTitle {
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(53, 47, 78);
+    line-height: 2rem;
+
+}
+
+.Bricoflor-technicalSpecsTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(53, 47, 78);
+    line-height: 2rem;
+}
+
+.Bricoflor-specsWrapper {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Bricoflor-specTitle {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(53, 47, 78);
+    margin-right: 5px;
+    display: inline-flex;
+}
+
+.Bricoflor-InfoCircle {
+    background: rgb(53, 47, 78);
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+    color: white;
+    display: inline-flex;
+    padding: 2px 1px 1px 1px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.Bricoflor-line {
+    border-bottom: 1px solid rgb(206, 207, 215);
+    height: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bricoflor-specDetail {
+    color: rgb(53, 47, 78);
+    font-size: 11px;
+    margin-left: 5px;
+    text-align: right;
+}
+
+.Bricoflor-infoIcon {
+    font-size: 12px;
+    margin-top: -6px;
+    margin-left: -3px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+    .Bricoflor-technicalSpecsTitle {
+        font-size: 26px;
+    }
+
+    .Bricoflor-specTitle {
+        font-size: 18px;
+    }
+
+    .Bricoflor-specDetail {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Bricoflor-technicalSpecsTitle {
+        font-size: 30px;
+    }
+
+    .Bricoflor-specTitle {
+        font-size: 20px;
+    }
+
+    .Bricoflor-specDetail {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-technicalSpecsInner {
+        flex-direction: row;
+    }
+
+    .Bricoflor-SampleImg1 {
+        width: 40% !important;
+        margin: 0;
+
+    }
+
+    .Bricoflor-technicalSpecsTitleWrapper {
+        width: 60%;
+        padding-left: 30px;
+    }
+
+    .Bricoflor-technicalSpecsTitle {
+        margin-bottom: 40px;
+
+    }
+
+    .Bricoflor-specsWrapper {
+        width: 90%;
+        margin: 10px 0 0 0;
+    }
+}
+
+/* ................-helpWrapper........................ */
+.Bricoflor-helpWrapper {
+    margin: 20px;
+    padding: 30px 25px 0 25px;
+    box-shadow: 6px 6px 5px rgba(180, 179, 179, 0.15);
+    background-color: rgb(244, 244, 249);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Bricoflor-helpTitle {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(53, 47, 78);
+    line-height: 2rem;
+}
+
+.Bricoflor-helpDescription {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: lighter;
+}
+
+.Bricoflor-helpContact {
+    display: flex;
+    margin: 20px 0;
+}
+
+.Bricoflor-helpIcon {
+    font-size: 20px;
+    color: rgb(150, 27, 72);
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.Bricoflor-helpNumber {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(150, 27, 72);
+    margin-bottom: 5px;
+}
+
+.Bricoflor-helpTiming {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.Bricoflor-helpImg {
+}
+
+.Bricoflor-ManImg {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 0;
+}
+
+@media screen and (min-width: 576px) {
+    .Bricoflor-helpTitle {
+        font-size: 22px;
+    }
+
+    .Bricoflor-helpDescription {
+        font-size: 16px;
+    }
+
+    .Bricoflor-helpContact {
+        display: flex;
+        margin: 20px 0;
+    }
+
+    .Bricoflor-helpNumber {
+        margin-bottom: 2px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Bricoflor-helpTitle {
+        font-size: 25px;
+    }
+
+    .Bricoflor-helpDescription {
+        font-size: 18px;
+    }
+
+    .Bricoflor-helpContact {
+        display: flex;
+        margin: 20px 0;
+    }
+
+    .Bricoflor-helpIcon {
+        font-size: 35px;
+    }
+
+    .Bricoflor-helpNumber {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+
+    .Bricoflor-helpTiming {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-helpWrapper {
+        flex-direction: row;
+        padding: 20px 15px;
+        position: relative;
+        width: 80%;
+        max-width: 1200px;
+        margin: 100px auto 35px auto;
+    }
+
+    .Bricoflor-helpText {
+        width: 60%;
+        padding: 25px;
+    }
+
+    .Bricoflor-helpTitle {
+        font-size: 32px;
+    }
+
+    .Bricoflor-helpDescription {
+        font-size: 16px;
+    }
+
+    .Bricoflor-helpContact {
+        display: inline-flex;
+        margin: 20px 10px;
+    }
+
+    .Bricoflor-helpIcon {
+        font-size: 25px;
+        margin-right: 15px;
+    }
+
+    .Bricoflor-helpImg {
+        width: 40%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .Bricoflor-ManImg {
+        margin-top: -60px;
+    }
+}
+
+/* ...................................BottomLogoSection............................. */
+.Bricoflor-BottomLogoSection {
+    display: flex;
+    padding-bottom: 0;
+}
+
+/* ...............................servicesWrapper................................. */
+.Bricoflor-servicesWrapper {
+    margin: 20px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Bricoflor-customerServiceSection {
+    margin-top: 40px;
+}
+
+.Bricoflor-customerServiceTitle {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-customerServicesWrapper {
+    margin: 12px 0;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-service {
+    margin: 6px 0;
+    font-size: 12px;
+}
+
+.Bricoflor-deliveryBrandsSection {
+    margin-top: 30px;
+}
+
+.Bricoflor-deliveryBrandTitle {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(53, 47, 78);
+}
+
+.Bricoflor-brandsWrapper {
+    margin-top: 10px;
+    display: flex;
+}
+
+.Bricoflor-brand {
+    padding: 10px 15px;
+}
+
+@media screen and (min-width: 576px) {
+    .Bricoflor-customerServiceTitle {
+        font-size: 20px;
+    }
+
+    .Bricoflor-service {
+        font-size: 14px;
+    }
+}
+
+.Bricoflor-deliveryBrandTitle {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .Bricoflor-customerServiceTitle {
+        font-size: 22px;
+    }
+
+    .Bricoflor-service {
+        font-size: 16px;
+    }
+}
+
+.Bricoflor-deliveryBrandTitle {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .Bricoflor-servicesWrapper {
+        flex-direction: row;
+        max-width: 1200px;
+        width: 80%;
+        margin: 130px auto 50px auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .Bricoflor-BottomLogoSection {
+        width: 60%;
+    }
+
+    .Bricoflor-customerServiceSection {
+        width: 20%;
+        margin-top: 0;
+    }
+
+    .Bricoflor-deliveryBrandsSection {
+        width: 20%;
+        margin-top: 0;
+        margin-left: 40px;
+    }
+}
+
+/* .Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-footer.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor-.Bricoflor- */
+.Bricoflor-footer {
+    background-color: rgb(40, 45, 82);
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.Bricoflor-footerInnerContent {
+    max-width: 1200px;
+    display: flex;
+    width: 80%;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Bricoflor-footerLongText {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.Bricoflor-footerShortText {
+    font-size: 12px;
+    text-align: right;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .Bricoflor-footerLongText {
+        font-size: 14px;
+    }
+
+    .Bricoflor-footerShortText {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    footer {
+        justify-content: center;
+    }
+
+    .Bricoflor-footerInnerContent {
+        max-width: 1200px;
+        flex-direction: row;
+    }
+
+    .Bricoflor-footerShortText {
+        margin-top: 0;
+    }
+}
