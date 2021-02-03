@@ -73,6 +73,9 @@ def append_item_details(item, row_details):
     item = item.replace("{{unit_price}}", str(row_details[dataFields['unit_count']]), 1)
     return item
 
+def assemble_children_string(array):
+    return " ".join(str(child) + ',' for child in array)
+
 print("*** Script Starting ***")
 
 # Row loop through the CSV file
@@ -99,6 +102,7 @@ for i, row in import_file.iterrows():
         backward_finished = False
         forward_finished = False
         count = i
+        children = []
 
         # Loop through products the previous products for any related products until we hit the parent product
         while not backward_finished:
@@ -116,6 +120,7 @@ for i, row in import_file.iterrows():
                 i_description_html = i_description_html.replace("{{short_product_description}}", str(current_row[dataFields['short_product_description']]), 1)
                 item_html = item_html.replace("<!-- {{product_description}} -->", str(i_description_html), 1)
                 item_html = item_html.replace("<!-- {{product}} -->", str(i_product_html), 1)
+                children.append(str(current_row[dataFields['external_product_id']]))
                 count = count - 1
 
         # Reset count ready to go backwards
@@ -140,10 +145,11 @@ for i, row in import_file.iterrows():
                 i_description_html = i_description_html.replace("{{short_product_description}}", str(current_row[dataFields['short_product_description']]), 1)
                 item_html = item_html.replace("<!-- {{product_description}} -->", str(i_description_html), 1)
                 item_html = item_html.replace("<!-- {{product}} -->", str(i_product_html), 1)
+                children.append(str(current_row[dataFields['external_product_id']]))
                 count = count + 1
 
         # Append edited HTML to Excel file row
-        export_data = export_data.append(pd.DataFrame({'Item SKU': item_sku, 'External ID': external_id, 'HTML': item_html}, index=[0]), ignore_index=True)
+        export_data = export_data.append(pd.DataFrame({'Item SKU': item_sku, 'External ID': external_id, 'Related': assemble_children_string(children), 'HTML': item_html}, index=[0]), ignore_index=True)
         export_rows_count = export_rows_count + 1
         print("HTML Generated for item (" + item_sku + ")")
 
